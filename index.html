@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Signature App</h1>
+
+    <!-- Signature Container -->
+    <div class="signature-container">
+        <canvas id="signatureCanvas"></canvas>
+        <br>
+        <button id="clearBtn" class="btn">Clear</button>
+        <button id="saveBtn" class="btn">Save Signature</button>
+        <button id="loadBtn" class="btn">Load Last Signature</button>
+    </div>
+
+    <!-- Settings for Pen Color, Background Color, and Pen Size -->
+    <div class="settings">
+        <!-- Pen Color -->
+        <div class="setting-item">
+            <label for="penColor">Pen Color</label>
+            <input type="color" id="penColor" value="#000000">
+        </div>
+
+        <!-- Background Color -->
+        <div class="setting-item">
+            <label for="bgColor">Background Color</label>
+            <input type="color" id="bgColor" value="#ffffff">
+        </div>
+
+        <!-- Pen Size -->
+        <div class="setting-item">
+            <label for="penSize">Pen Size</label>
+            <input type="number" id="penSize" value="3" min="1" max="10">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Created by Shivam Baghel</p>
+    </footer>
+
+     <script src="script.js"></script>
+
+</body>
+</html>

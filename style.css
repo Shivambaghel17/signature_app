@@ -1,0 +1,153 @@
+ /* Reset all margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db); /* Modern gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ecf0f1;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: titleAnimation 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleAnimation {
+            0% {
+                color: #ecf0f1;
+                text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                color: #3498db;
+                text-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+            }
+        }
+
+        .signature-container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+            margin-bottom: 40px;
+            position: relative;
+            backdrop-filter: blur(10px);
+            border: 2px solid #3498db; /* Soft blue border */
+        }
+
+        canvas {
+            width: 100%;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.3); /* Light background on canvas */
+            border-radius: 15px;
+            border: 2px solid #2980b9; /* Blue canvas border */
+        }
+
+        /* Buttons Styling */
+        .btn {
+            background: linear-gradient(135deg, #2980b9, #8e44ad); /* Gradient button color */
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #8e44ad, #2980b9);
+            box-shadow: 0 8px 30px rgba(52, 152, 219, 0.6);
+        }
+
+        /* Settings for Pen Color, Background Color, and Pen Size */
+        .settings {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .setting-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+        }
+
+        .setting-item label {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        .setting-item input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255, 255, 255, 0.3); /* Transparent effect */
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            text-align: center;
+            color: white;
+        }
+
+        .setting-item input[type="color"] {
+            background: #2980b9;
+            border: 2px solid #8e44ad;
+        }
+
+        .setting-item input[type="number"] {
+            background: #2980b9;
+            border: 2px solid #8e44ad;
+        }
+
+        .setting-item input:hover {
+            transform: scale(1.05);
+            border-color: #3498db;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            color: #ff7a00;
+        }
+
+        .footer-text a {
+            text-decoration: none;
+            color: #ff7a00;
+            font-weight: 700;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
